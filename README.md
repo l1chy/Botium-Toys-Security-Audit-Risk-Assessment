@@ -37,32 +37,32 @@ Below is the status of security controls audited during this assessment:
 
 ---
 
-## ⚖️ Compliance Assessment Gaps
+## ⚖️ Assessment Gaps
 * **PCI DSS:** **Non-Compliant**. Unencrypted cardholder data is stored locally, and access is not restricted to authorized users.
 * **GDPR:** **Partially Compliant**. Privacy policies are enforced, and a 72-hour breach notification plan exists for E.U. citizens; however, sensitive user data lacks appropriate confidentiality safeguards (encryption).
 * **SOC (Type 1 / Type 2):** **Non-Compliant**. User access policies are weak, and PII/SPII data privacy is not properly maintained.
 
 ---
 
-## 💡 Strategic Recommendations
+## 💡 Recommendations
 
 1. **Access Control & Privilege Management**
-   * Implement **Role-Based Access Control (RBAC)** based on the **Principle of Least Privilege** and **Separation of Duties** to restrict unauthorized employee access to sensitive cardholder data.
+   * Implement **Role-Based Access Control** based on the **Principle of Least Privilege** and **Separation of Duties** to restrict unauthorized employee access to sensitive cardholder data.
 
 2. **Data Protection & Encryption**
-   * Enforce strong encryption (**AES-256**) for all PII/SPII and financial data both **at rest and in transit**. Strictly prohibit the unsecured local storage of plaintext credit card information to achieve **PCI DSS compliance**.
+   * Enforce strong encryption for all PII/SPII and financial data both **at rest and in transit**. Strictly prohibit the unsecured local storage of plaintext credit card information to achieve **PCI DSS compliance**.
 
 3. **Network Security & Threat Detection**
    * Deploy a centralized **Intrusion Detection System (IDS)** to monitor internal network traffic and proactively identify anomalous behavior or potential lateral movement.
 
 4. **Business Continuity & Disaster Recovery**
-   * Develop a comprehensive **Disaster Recovery Plan (DRP)** and implement an automated, regularly tested backup schedule (adhering to a **3-2-1 backup strategy**) to guarantee data availability.
+   * Develop a comprehensive **Disaster Recovery Plan** and implement an automated, regularly tested backup schedule (adhering to a **3-2-1 backup strategy**) to guarantee data availability.
 
 5. **Identity & Password Hardening**
    * Upgrade the corporate password policy complexity requirements (minimum length, special characters, numbers) and deploy a **Centralized Password Management System** to streamline operations and enforce compliance.
 
 6. **Lifecycle & Lifecycle Management**
-   * Establish a formal schedule for the maintenance, monitoring, and eventual decommissioning or isolation of **End-of-Life (EOL) legacy systems** to mitigate unpatched exploit risks.
+   * Establish a formal schedule for the maintenance, monitoring, and eventual decommissioning or isolation of **End-of-Life legacy systems** to mitigate unpatched exploit risks.
 
 ---
 
